@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { ListPokes } from "./home";
-import { AllDetails } from './all-details';
-import { ThemeContext } from "../components/contexs/theme-context";
+import { ListPokes } from "../components/exibition-pages/home.js";
+import { AllDetails} from "../components/exibition-pages/all-details.js"
+import { ThemeContext } from "../contexts/theme-context";
 import { styled } from "styled-components";
 
 const AppRoutes = () => {

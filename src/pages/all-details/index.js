@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { getDetailsPokemon } from "../services/pokemon";
+import { getDetailsPokemon } from "../../services/pokemon";
 import styled from "styled-components"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';

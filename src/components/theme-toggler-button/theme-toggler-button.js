@@ -1,5 +1,5 @@
 import React, { useContext } from "react"
-import { ThemeContext, themes } from "../contexs/theme-context"
+import { ThemeContext, themes } from "../../contexts/theme-context"
 import { Button } from "../button/button2"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';

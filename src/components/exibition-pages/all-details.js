@@ -1,4 +1,4 @@
-import { PokeDetails } from '../components/all-details'
+import { PokeDetails } from '../../pages/all-details'
 
 const AllDetails = () =>(
     <>

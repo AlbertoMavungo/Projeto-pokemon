@@ -1,9 +1,9 @@
 
 import React, { useState, useEffect } from "react";
-import { getPokemon } from "../services/pokemon";
+import { getPokemon } from "../../services/pokemon";
 import styled from "styled-components"
 import { Link } from "react-router-dom";
-import { Button } from "../button/button";
+import { Button } from "../../components/button/button";
 
 
 const Home = () => {
