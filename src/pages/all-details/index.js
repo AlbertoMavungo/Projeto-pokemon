@@ -25,7 +25,7 @@ const PokeDetails = () => {
             <H2>Detalhes</H2>
             {
                 <Div1>
-                    <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`} style={{ marginTop: '20px' }} />
+                    <Img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`} />
                     <h1>{pokemonList.name}</h1>
                     <Subtitulos>Movimentos</Subtitulos>
                     <Ul>
@@ -40,7 +40,7 @@ const PokeDetails = () => {
                         )}
                     </Ul>
                     <div style={{ display: 'flex', marginTop: '-20px' }}>
-                        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <HabilitiesEndTypes>
                             <Subtitulos >Abilidades</Subtitulos>
                             <Ul>
                                 {pokemonList.abilities ? (
@@ -52,8 +52,8 @@ const PokeDetails = () => {
                                 ) : (<p>carregando...</p>)
                                 }
                             </Ul>
-                        </div>
-                        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+                        </HabilitiesEndTypes>
+                        <HabilitiesEndTypes>
                             <Subtitulos >Tipo</Subtitulos>
                             <Ul>
                                 {pokemonList.types ? (
@@ -66,7 +66,7 @@ const PokeDetails = () => {
                                 ) : (<p>carregando...</p>)
                                 }
                             </Ul>
-                        </div>
+                        </HabilitiesEndTypes>
                     </div>
                     <Link to='/'><FontAwesomeIcon icon={faHouse} size="2x" style={{ marginBottom: '10px' }} /></Link>
                 </Div1>
@@ -75,8 +75,12 @@ const PokeDetails = () => {
     );
 }
 
+const Img = styled.img`
+ margin-top: '20px' 
+`
+
 const Div = styled.div`
-   display:flex;
+   display:flex;Img
    justify-content: center;
    align-items: center;
    flex-direction: column;
@@ -115,6 +119,12 @@ const Ul = styled.ul`
 `
 const Li = styled.li`
 margin:-40px 7px 0px 7px;
+`
+
+const HabilitiesEndTypes = styled.div`
+    display: 'flex'; 
+    flex-direction: 'column';
+    align-items: 'center'
 `
 
 export { PokeDetails }

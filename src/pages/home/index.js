@@ -1,10 +1,9 @@
-
 import React, { useState, useEffect } from "react";
 import { getPokemon } from "../../services/pokemon";
-import styled from "styled-components"
+import styled from "styled-components";
+import "./index.css";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/button/button";
-
 
 const Home = () => {
     const [homeData, setHomeData] = useState({ pokes: [] });
@@ -30,7 +29,7 @@ const Home = () => {
                         .slice(0, showFullList ? homeData.pokes.length : 10)
                         .map((poke, index) =>
                             <Li key={index}>
-                                <Link to={`/poke/${poke.id}`} style={{ textDecoration: 'none', fontSize: '20px', color: '#000000', fontWeight: 'bold' }}>
+                                <Link to={`/poke/${poke.id}`} className="link">
                                     <p>{poke.name}</p>
                                     <img src={poke.sprites.front_default} />
                                 </Link>

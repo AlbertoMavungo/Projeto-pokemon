@@ -1,9 +1,12 @@
-import React from "react";
 import styled from "styled-components";
 
 const Button = ({showFullList, toggleList}) => {
     return (
-        <Botao onClick={toggleList}><h2>{showFullList? "Mostrar menos" : "Mostrar mais"}</h2></Botao>
+        <Botao onClick={toggleList}>
+            <h2>
+                {showFullList? "Mostrar menos" : "Mostrar mais"}
+            </h2>
+        </Botao>
     );
 };
 
